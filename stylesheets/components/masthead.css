@@ -1,1 +1,36 @@
 /* Your code here */
+.masthead{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'ms . actionButtons'
+    '. littleTech .'
+    'date logo todaysPaper'
+    ;
+}
+
+.masthead__menu-and-search {
+    grid-area: ms;
+}
+
+.masthead__actions{
+    grid-area: actionButtons;
+}
+
+.masthead__technologies{
+    grid-area:littleTech;
+}
+
+.masthead__date{
+    grid-area: date;
+}
+
+.masthead__logo{
+    grid-area: logo;
+}
+
+.masthead__paper{
+    grid-area: todaysPaper;
+}

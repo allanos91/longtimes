@@ -1,95 +1,107 @@
 /* Your code here */
-.masthead{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    'ms . actionButtons'
-    '. littleTech .'
-    'date logo todaysPaper'
-    ;
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 50%;
+  grid-template-areas:
+    "ms . actionButtons"
+    ". littleTech ."
+    "date logo todaysPaper";
 }
 
 .masthead__menu-and-search {
-    font-size: 11px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    grid-area: ms;
-    display: flex;
-
+  font-size: 11px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  grid-area: ms;
+  display: flex;
 }
 
 .fa-bars {
-    align-items: center;
-    padding-left: 20px;
+  align-items: center;
+  padding-left: 20px;
 }
 
-.fa-search{
-    align-items: center;
-    padding-left: 20px;
+.fa-search {
+  align-items: center;
+  padding-left: 20px;
 }
 
 .masthead__menu-and-search:hover {
-    background-color: #f7f7f5;
+  background-color: #f7f7f5;
 }
 
-.masthead__actions{
-    grid-area: actionButtons;
-    display:flex;
-    align-items:center;
-    justify-content: flex-end;
-    padding-top: 7px
+.masthead__actions {
+  grid-area: actionButtons;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 7px;
 }
 
-#cog{
-    
+#cog {
 }
 
-.masthead__technologies{
-    grid-area:littleTech;
-    font-size: 10px;
-    color:#6f6f6f;
-    text-transform: uppercase;
-    text-align: center;
-
+.masthead__technologies {
+  grid-area: littleTech;
+  font-size: 10px;
+  color: #6f6f6f;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.css{
-    margin-right: 15px;
-}
-.html{
-    margin-right: 15px;
-}
-.javascript{
-    margin-right: 15px;
-}
-.python{
-    margin-right: 15px;
+.techBorder {
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  background-color: white;
+  position: relative;
+  top: 1px;
 }
 
-.masthead__date{
-    display: flex;
-    grid-area: date;
-    font-size: 11px;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding-right:30px;
-
+.css {
+  margin-right: 15px;
+}
+.html {
+  margin-right: 15px;
+}
+.javascript {
+  margin-right: 15px;
 }
 
-.masthead__logo{
-    grid-area: logo;
-    text-align: center;
+.masthead__date {
+  padding-bottom: 11px;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  grid-area: date;
+  font-size: 11px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-right: 30px;
 }
 
-.masthead__paper{
-    display: flex;
-    grid-area: todaysPaper;
-    font-size: 11px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-left: 30px;
+.masthead__logo {
+  padding-bottom: 11px;
+  grid-area: logo;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+}
+
+.masthead__paper {
+  padding-bottom: 11px;
+  display: flex;
+  grid-area: todaysPaper;
+  font-size: 11px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 30px;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
 }

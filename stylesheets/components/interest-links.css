@@ -1,1 +1,28 @@
 /* Your code here */
+.interest_links{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 3fr 3fr 2fr 1.75fr;
+    grid-template-areas:
+    'dog cat plug stock weather';
+}
+
+.dog{
+    grid-area: dog;
+}
+
+.cat{
+    grid-area: cat;
+}
+
+.plug{
+    grid-area: plug
+}
+
+.stock{
+    grid-area: stock
+}
+
+.weather{
+    grid-area: weather;
+}
